@@ -1,0 +1,23 @@
+{
+  "name": "pa11y-demo",
+  "version": "1.0.0",
+  "description": "Demo of the use of pa11y in a basic project",
+  "main": "index.js",
+  "paths": {
+    "a11y": [
+      "file:///Users/rogercornet/Desktop/pa11y-demo/index.html"
+    ]
+  },
+  "scripts": {
+    "build": "webpack && npm run pa11y",
+    "pa11y": "node \"./lint-a11y.js\""
+  },
+  "author": "Roger Cornet",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "pa11y": "^4.13.2"
+  }
+}
