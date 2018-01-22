@@ -5,7 +5,7 @@
   "main": "index.js",
   "paths": {
     "a11y": [
-      "file:///Users/rogercornet/Desktop/pa11y-demo/index.html"
+      "file:///Users/rogercornet/Desktop/demo-pa11y/index.html"
     ]
   },
   "scripts": {

@@ -8,12 +8,14 @@
 </head>
 <body>
   <!-- Not valid HTML for Pa11y -->
-  <!-- <fieldset> needs a <legend> to describe it -->
-  <fieldset>
-    <!-- <input> has to have a name and a label -->
-    <input type="text">
-  </fieldset>
-
+  <form>
+    <!-- <fieldset> needs a <legend> to describe it -->
+    <fieldset>
+      <!-- <input> has to have a name and a label -->
+      <input type="text">
+    </fieldset>
+    <!-- Submit button is needed for the form to be valid -->
+  </form>
   <!-- Make valid HTML for Pa11y with js -->
   <script src="./dist/bundle.js"></script>
 </body>
