@@ -1,11 +1,11 @@
-const pa11y = require(`pa11y`) // Docs: https://github.com/pa11y/pa11y
+const pa11y = require('pa11y') // Docs: https://github.com/pa11y/pa11y
 
-const { paths } = require(`./package.json`)
+const { paths } = require('./package.json')
 const pa11yConfig = {
   ignore: [
-    `notice`, `warning`
+    'notice', 'warning'
   ],
-  standard: `WCAG2AA`
+  standard: 'WCAG2AA'
 }
 
 const test = pa11y(pa11yConfig)
@@ -19,7 +19,7 @@ paths.a11y.forEach((url) => {
 
     if (results.length > 0) {
       // Print errors and finish the process
-      console.error(JSON.stringify(results, null, `  `))
+      console.error(JSON.stringify(results, null, '  '))
       process.exit(-1)
     }
   })
